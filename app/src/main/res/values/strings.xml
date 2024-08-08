@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">assingment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_button">View Products</string>
+
+    <string name="Title_RecipeList">Products List</string>
+    <string name="Brand_RecipeDetail">Brand:</string>
+    <string name="Availability_RecipeDetail">Availability:</string>
+    <string name="category_RecipeDetail">Category:</string>
+    <string name="currency_RecipeDetail">USD(incl of all taxes):</string>
+</resources>

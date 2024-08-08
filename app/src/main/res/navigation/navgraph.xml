@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/screen1_Fragment">
+
+    <fragment
+        android:id="@+id/screen1_Fragment"
+        android:name="com.example.assingment.presentation.Screen1_Fragment"
+        android:label="fragment_screen1_"
+        tools:layout="@layout/fragment_screen1_" >
+        <action
+            android:id="@+id/action_screen1_Fragment_to_responselist"
+            app:destination="@id/responselist" />
+    </fragment>
+    <fragment
+        android:id="@+id/responselist"
+        android:name="com.example.assingment.presentation.responselist.Responselist"
+        android:label="fragment_responselist"
+        tools:layout="@layout/fragment_responselist" >
+        <action
+            android:id="@+id/action_responselist_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.assingment.presentation.productdetail.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+              android:name="product"
+             app:argType="string"
+            />
+    </fragment>
+</navigation>
